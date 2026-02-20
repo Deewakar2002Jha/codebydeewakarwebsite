@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Deewakar Jha - Full Stack Developer & Cyber Security Enthusiast
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar sticky">
+      <div class="container navbar-content">
+        <div class="navbar-logo">
+          <div class="logo-badge">DJ</div>
+          <span class="logo-text">Deewakar Jha</span>
+        </div>
+
+        <div class="nav-desktop">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#certifications" class="nav-link">Certifications</a>
+          <a href="#achievements" class="nav-link">Achievements</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <div class="navbar-actions">
+          <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+            <span class="theme-icon">⚡</span>
+          </button>
+          <a
+            href="finalresume.pdf"
+            target="_blank"
+            class="btn btn-primary hidden-mobile"
+            >Resume</a
+          >
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu hidden" id="mobileMenu">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#experience" class="mobile-nav-link">Experience</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#certifications" class="mobile-nav-link">Certifications</a>
+        <a href="#achievements" class="mobile-nav-link">Achievements</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <a href="resume.pdf" target="_blank" class="btn btn-primary"
+          >Download Resume</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <div class="grid-pattern"></div>
+        <div class="gradient-blob"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="block">Deewakar</span>
+            <span class="block accent-text">Jha</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            Frontend Developer & Cyber Security Enthusiast
+          </h2>
+          <p class="hero-tagline">
+            Building Secure, Scalable & High-Performance Web Applications
+          </p>
+
+          <div class="hero-buttons">
+            <button
+              class="btn btn-primary"
+              onclick="scrollToSection('projects')"
+            >
+              View Projects
+            </button>
+            <a href="finalresume.pdf" target="_blank" class="btn btn-outline"
+              >Download Resume</a
+            >
+            <button
+              class="btn btn-outline"
+              onclick="scrollToSection('contact')"
+            >
+              Contact Me
+            </button>
+          </div>
+
+          <div class="social-icons">
+            <a
+              href="https://linkedin.com/in/deewakar-jha-57a030264"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/Deewakar2002Jha"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <i class="fas fa-arrow-down"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-grid">
+          <div class="about-card glass-card">
+            <h3 class="card-title">Professional Journey</h3>
+            <p>
+              Certified Ethical Hacker with strong knowledge in Cyber Security,
+              Network Security, and Cloud fundamentals. I have hands-on
+              experience in vulnerability scanning, OWASP Top 10 security risks,
+              REST API security, JWT authentication, and secure coding
+              practices.
+            </p>
+            <p>
+              Skilled in MERN stack development and Shopify customization, with
+              a passion for building secure and scalable web applications. I'm
+              seeking entry-level roles in Full Stack Development and
+              Information Security where I can contribute my technical expertise
+              and security mindset.
+            </p>
+          </div>
+
+          <div class="about-right">
+            <div class="glass-card accent-border">
+              <h3 class="card-title"><i class="fas fa-book"></i> Education</h3>
+              <div class="education-item">
+                <p class="font-semibold">Master of Computer Applications</p>
+                <p class="text-muted">Ganpat University</p>
+                <div class="education-footer">
+                  <span>Expected 2026</span>
+                  <span class="cgpa-badge">CGPA: 8.10</span>
+                </div>
+              </div>
+              <hr />
+              <div class="education-item">
+                <p class="font-semibold">Bachelor of Computer Applications</p>
+                <p class="text-muted">Ganpat University</p>
+                <div class="education-footer">
+                  <span>2024</span>
+                  <span class="cgpa-badge">CGPA: 8.34</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card accent-border">
+              <h3 class="card-title">
+                <i class="fas fa-trophy"></i> Leadership
+              </h3>
+              <div class="leadership-item">
+                <p class="font-semibold">Football Team Captain</p>
+                <p class="text-muted">
+                  Led team with passion, strategy, and dedication
+                </p>
+              </div>
+              <hr />
+              <div class="leadership-item">
+                <p class="font-semibold">NSS Volunteer</p>
+                <p class="text-muted">
+                  2022 – 2024 | Contributing to community service
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills & Expertise</h2>
+
+        <div class="skills-grid">
+          <!-- Cyber Security -->
+          <div class="glass-card skill-card accent-border">
+            <h3 class="card-title">
+              <i class="fas fa-shield-alt"></i> Cyber Security
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Vulnerability Assessment</span>
+              <span class="skill-tag">OWASP Top 10</span>
+              <span class="skill-tag">Network Security</span>
+              <span class="skill-tag">System Hardening</span>
+              <span class="skill-tag">Cloud Security</span>
+            </div>
+          </div>
+
+          <!-- Security Tools -->
+          <div class="glass-card skill-card accent-border">
+            <h3 class="card-title">
+              <i class="fas fa-tools"></i> Security Tools
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Nmap</span>
+              <span class="skill-tag">Burp Suite</span>
+              <span class="skill-tag">Wireshark</span>
+              <span class="skill-tag">Kali Linux</span>
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="glass-card skill-card accent-border">
+            <h3 class="card-title"><i class="fas fa-code"></i> Frontend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="glass-card skill-card accent-border">
+            <h3 class="card-title"><i class="fas fa-database"></i> Backend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">JWT Auth</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="glass-card skill-card accent-border">
+            <h3 class="card-title">
+              <i class="fas fa-plug"></i> Tools & DevOps
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Chrome DevTools</span>
+              <span class="skill-tag">Linux</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-stats">
+          <div class="stat">
+            <p class="stat-number">25+</p>
+            <p class="stat-label">Technologies & Tools</p>
+          </div>
+          <div class="stat">
+            <p class="stat-number">5</p>
+            <p class="stat-label">Skill Categories</p>
+          </div>
+          <div class="stat">
+            <p class="stat-number">CEH</p>
+            <p class="stat-label">Certified Ethical Hacker</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+
+        <div class="experience-list">
+          <!-- Experience 1 -->
+          <div class="glass-card experience-card accent-border">
+            <div class="experience-header">
+              <div>
+                <h3 class="experience-title">Software Developer Intern</h3>
+                <p class="experience-company">Cartrends Pvt Ltd</p>
+              </div>
+            </div>
+            <div class="experience-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Delhi</span>
+              <span><i class="fas fa-calendar"></i> Recent</span>
+            </div>
+            <ul class="experience-highlights">
+              <li>Customized Shopify themes for enhanced user experience</li>
+              <li>Integrated Razorpay, PayPal, and Stripe payment gateways</li>
+              <li>Improved website performance and loading speed</li>
+              <li>Supported 1200+ customers with reliable solutions</li>
+              <li>Implemented Shopify API integration for custom features</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-badge">Shopify</span>
+              <span class="tech-badge">Razorpay</span>
+              <span class="tech-badge">PayPal</span>
+              <span class="tech-badge">Stripe</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="glass-card experience-card accent-border">
+            <div class="experience-header">
+              <div>
+                <h3 class="experience-title">Software Developer Intern</h3>
+                <p class="experience-company">Blue Stock Company</p>
+              </div>
+            </div>
+            <div class="experience-meta">
+              <span><i class="fas fa-map-marker-alt"></i> Pune</span>
+              <span><i class="fas fa-calendar"></i> Recent</span>
+            </div>
+            <ul class="experience-highlights">
+              <li>Built MERN stack Job Portal serving 500+ users</li>
+              <li>Implemented JWT authentication for secure user sessions</li>
+              <li>Developed RESTful APIs for job listings and applications</li>
+              <li>Improved UI speed by 25% through optimization</li>
+              <li>Implemented responsive design for mobile and desktop</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Express.js</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">JWT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="projects-grid">
+          <!-- AnimeEnsemble -->
+          <div class="glass-card project-card">
+            <div class="project-image">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa8a04d1e2fe54a53a3e9869229d607f4%2Fc5224545d2f34209abcd36a8204b17df?format=webp&width=800&height=1200"
+                alt="AnimeEnsemble"
+              />
+            </div>
+            <h3 class="project-title">AnimeEnsemble</h3>
+            <p class="project-description">
+              A modern E-commerce platform specializing in anime merchandise
+              with secure payment integration and user-friendly shopping
+              experience.
+            </p>
+            <div class="project-features">
+              <span class="feature-tag">User Authentication</span>
+              <span class="feature-tag">Shopping Cart</span>
+              <span class="feature-tag">Product Management</span>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-badge">React.js</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">MongoDB</span>
+            </div>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/Deewakar2002Jha/AnimeEssemble"
+                target="_blank"
+                class="btn btn-outline btn-small"
+              >
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a
+                href="https://anime-essemble-frontend.onrender.com/"
+                target="_blank"
+                class="btn btn-outline btn-small"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+
+          <!-- Total Fitness Gym -->
+          <div class="glass-card project-card">
+            <div class="project-image">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa8a04d1e2fe54a53a3e9869229d607f4%2F8d6a5ff37c92413992cb73f273bc3fd6?format=webp&width=800&height=1200"
+                alt="Total Fitness Gym"
+              />
+            </div>
+            <h3 class="project-title">Total Fitness Gym</h3>
+            <p class="project-description">
+              A dynamic fitness gym website with membership plans, class
+              schedules, trainer profiles, and online registration system for
+              fitness enthusiasts.
+            </p>
+            <div class="project-features">
+              <span class="feature-tag">Membership Mgmt</span>
+              <span class="feature-tag">Class Scheduling</span>
+              <span class="feature-tag">Registration</span>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+            </div>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/Deewakar2002Jha"
+                target="_blank"
+                class="btn btn-outline btn-small"
+              >
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a
+                href="https://totalfitnessgym.infinityfreeapp.com/"
+                target="_blank"
+                class="btn btn-outline btn-small"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+
+          <!-- Global Knowledge LMS -->
+          <div class="glass-card project-card">
+            <div class="project-image">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa8a04d1e2fe54a53a3e9869229d607f4%2F1c8b0f2643fc4b929982f12db00ca05a?format=webp&width=800&height=1200"
+                alt="Global Knowledge LMS"
+              />
+            </div>
+            <h3 class="project-title">Global Knowledge LMS</h3>
+            <p class="project-description">
+              A comprehensive Learning Management System for online education
+              with course management, enrollment, and progress tracking.
+            </p>
+            <div class="project-features">
+              <span class="feature-tag">Course Mgmt</span>
+              <span class="feature-tag">Enrollment</span>
+              <span class="feature-tag">Progress Tracking</span>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">MySQL</span>
+            </div>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/Deewakar2002Jha"
+                target="_blank"
+                class="btn btn-outline btn-small"
+              >
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a
+                href="https://globalhub.page.gd/home.php"
+                target="_blank"
+                class="btn btn-outline btn-small"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+
+          <!-- Web Vulnerability Scanner -->
+          <div class="glass-card project-card">
+            <div class="project-image">
+              <div class="emoji-placeholder">🔒</div>
+            </div>
+            <h3 class="project-title">Web Vulnerability Scanner</h3>
+            <p class="project-description">
+              A security-focused tool for identifying vulnerabilities and
+              security risks in web applications using industry-standard tools.
+            </p>
+            <div class="project-features">
+              <span class="feature-tag">Network Scanning</span>
+              <span class="feature-tag">OWASP Testing</span>
+              <span class="feature-tag">Security Reports</span>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-badge">Nmap</span>
+              <span class="tech-badge">Burp Suite</span>
+              <span class="tech-badge">Kali Linux</span>
+            </div>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/Deewakar2002Jha"
+                target="_blank"
+                class="btn btn-outline btn-small"
+              >
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2 class="section-title">Certifications</h2>
+
+        <div class="certifications-grid">
+          <div class="glass-card cert-card">
+            <i class="fas fa-award cert-icon"></i>
+            <h3 class="cert-title">Ethical Hacker</h3>
+            <p class="cert-issuer">Cisco Networking Academy</p>
+            <p class="cert-description">
+              Comprehensive certification in ethical hacking and cybersecurity
+              fundamentals
+            </p>
+            <p class="cert-year"><i class="fas fa-calendar"></i> 2025</p>
+          </div>
+
+          <div class="glass-card cert-card">
+            <i class="fas fa-certificate cert-icon"></i>
+            <h3 class="cert-title">Full Stack Web Development</h3>
+            <p class="cert-issuer">Udemy</p>
+            <p class="cert-description">
+              Complete course covering modern web development with MERN stack
+              and best practices
+            </p>
+            <p class="cert-year"><i class="fas fa-calendar"></i> 2025</p>
+          </div>
+
+          <div class="glass-card cert-card">
+            <i class="fas fa-graduation-cap cert-icon"></i>
+            <h3 class="cert-title">Python for Beginners</h3>
+            <p class="cert-issuer">IIT Bombay</p>
+            <p class="cert-description">
+              Foundational Python programming course by India's premier
+              technical institution
+            </p>
+            <p class="cert-year"><i class="fas fa-calendar"></i> 2025</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <h2 class="section-title">Achievements & Awards</h2>
+
+        <div class="achievements-grid">
+          <div class="glass-card achievement-card">
+            <i class="fas fa-star achievement-icon"></i>
+            <h3 class="achievement-title">Student of the Year</h3>
+            <p class="achievement-org">Ganpat University</p>
+            <p class="achievement-desc">
+              Recognized for excellence in academics and overall development
+            </p>
+          </div>
+
+          <div class="glass-card achievement-card">
+            <i class="fas fa-trophy achievement-icon"></i>
+            <h3 class="achievement-title">Best Web Designer</h3>
+            <p class="achievement-org">Tech Fest</p>
+            <p class="achievement-desc">
+              Award for outstanding web design and user interface innovation
+            </p>
+          </div>
+
+          <div class="glass-card achievement-card">
+            <i class="fas fa-bolt achievement-icon"></i>
+            <h3 class="achievement-title">Winner - Presentation Competition</h3>
+            <p class="achievement-org">University Competition</p>
+            <p class="achievement-desc">
+              First place in technical presentation and communication skills
+            </p>
+          </div>
+
+          <div class="glass-card achievement-card">
+            <i class="fas fa-users achievement-icon"></i>
+            <h3 class="achievement-title">Football Team Captain</h3>
+            <p class="achievement-org">University Sports</p>
+            <p class="achievement-desc">
+              Led team with strategic thinking, leadership, and dedication
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">Let's build something amazing together!</p>
+
+        <div class="contact-grid">
+          <div class="glass-card contact-form">
+            <h3 class="card-title">Send me a Message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <div class="glass-card contact-card accent-border">
+              <i class="fas fa-envelope contact-icon"></i>
+              <p class="contact-label">Email</p>
+              <a href="mailto:deewakarrealme@gmail.com" class="contact-value"
+                >deewakarrealme@gmail.com</a
+              >
+            </div>
+
+            <div class="glass-card contact-card accent-border">
+              <i class="fas fa-phone contact-icon"></i>
+              <p class="contact-label">Phone</p>
+              <a href="tel:+919006422475" class="contact-value"
+                >+91 9006422475</a
+              >
+            </div>
+
+            <div class="glass-card contact-card accent-border">
+              <p class="contact-label">Connect with me</p>
+              <div class="contact-social">
+                <a
+                  href="https://linkedin.com/in/deewakar-jha-57a030264"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://github.com/Deewakar2002Jha"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-cta">
+          <h3>Let's Build Secure & Scalable Solutions Together</h3>
+          <p>
+            I'm always interested in hearing about new projects and
+            opportunities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2025 Deewakar Jha. All rights reserved. | Built with passion
+          for secure & scalable web applications.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
